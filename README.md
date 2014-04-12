@@ -1,4 +1,4 @@
-edwardhinkle-personal
+Edward Hinkle's Personal Site
 =====================
 
-A repository of my personal website
+This is the repository of my public-facing portfolio website.
