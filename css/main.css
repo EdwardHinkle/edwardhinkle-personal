@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+body {
+    background-color: #f1f2eb;
+}
+
+.row.top-margin {
+    height: 45px;
+}
+
+nav.top-bar .title-area h1,
+nav.tab-bar h1.title {
+    color: #f1f2eb;
+    font-family: 'Lato', sans-serif;
+}
+
+nav.top-bar .title-area h1 {
+    font-size: 2rem;
+}
+nav.tab-bar h1.title {
+    font-size: 1.5rem;
+}
+
+nav.top-bar .title-area {
+    margin-right: 10px;
+}
+
+nav.top-bar li a {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #189dbf;
+}
+
+/*nav.top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: #189dbf;
+}*/
+
+nav.top-bar .dropdown li a {
+    font-weight: 200;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.heavy {
+    font-weight: 700;
+}
+
+.upper {
+    text-transform: uppercase;
+}

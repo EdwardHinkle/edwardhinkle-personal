@@ -1,0 +1,50 @@
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+				<h1><span class="light upper">Edward</span> <span class="heavy upper">Hinkle</span></h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+		</ul>
+
+    <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+			{{#forEach rightMenu key="item"}}
+        <li id="nav-{{item.id}}"
+            {{#if item.children}}
+                class="has-dropdown"
+            {{/if}}
+        ><a href="{{item.url}}">{{item.name}}</a>
+            {{#if item.children}}
+                <ul class="dropdown">
+                    {{#forEach item.children key="childItem"}}
+                        <li id="nav-{{childItem.id}}"><a href="{{childItem.url}}">{{childItem.name}}</a></li>
+                    {{/forEach}}
+                </ul>
+            {{/if}}
+      </li>
+      {{/forEach}}
+    </ul>
+      
+      <!--<li><a href="http://blog.edwardhinkle.com">Blog</a></li>
+      <li class="has-dropdown">
+        <a href="#">Social Media</a>
+        <ul class="dropdown">
+          <li><a href="https://twitter.com/edwardhinkle">Twitter</a></li>
+					<li><a href="https://www.linkedin.com/in/edwardhinkle">Linked in</a></li>
+        </ul>
+      </li>
+    </ul>-->
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      {{#forEach mainMenu key="item"}}
+        <li id="nav-{{item.id}}"
+            {{#ifCond activePage item.id}}
+                class="active"
+            {{/ifCond}}
+        ><a href="{{item.url}}">{{item.name}}</a></li>
+      {{/forEach}}
+    </ul>
+    </section>
+</nav>
