@@ -2,6 +2,16 @@
     el: '#container',
     render: function(){
     
+      $(document).ajaxStart(function() {
+         NProgress.start();
+         NProgress.set(0.4);
+         NProgress.inc();
+      });
+      
+      $(document).ajaxStop(function() {
+         NProgress.done();
+      });
+    
       var page = new PageView({
          parentEl: this.el
       });
