@@ -1,9 +1,9 @@
 var Router = Backbone.Router.extend({
     routes:{
         '': 'github',
-        'resume': 'resume',
+        //'resume': 'resume',
         //'work': 'work',
-        //'about': 'aboutme',
+        'about': 'aboutme',
         'github': 'github'
     },
     front: function() {
@@ -17,8 +17,7 @@ var Router = Backbone.Router.extend({
         console.debug("Work Page");
     },
     aboutme: function() {
-        appView.updateNavigation("about");
-        console.debug("Me!!!!");
+        appView.updatePage("about", AboutView);
     },
     github: function() {
         appView.updatePage("github", GithubView);

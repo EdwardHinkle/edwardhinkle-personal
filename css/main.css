@@ -75,7 +75,7 @@ div.github {
   font-weight: 300;
 }
 .repo .repo-header .repo-title a:hover {
-	color: #636363;
+	color: #189dbf;
 }
 .repo .repo-header .repo-title {
 	margin-bottom: 0px;
@@ -139,11 +139,37 @@ div.github {
     border-color: #0c658c;
 }
 
-.repo-language.JavaScript {
+.repo-language.JavaScript,
+.repo .repo-header.JavaScript h2.repo-title a:hover {
     color: #0c658c;
 }
+
 
 .stats i {
     margin-left: 10px;
     margin-right: 3px;
+}
+
+
+/**
+ * About Me
+ ********************/
+h1.profile-title {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    border: solid medium #fff;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+div.about.row {
+    position: relative;
+}
+
+div.about {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4rem;
 }
