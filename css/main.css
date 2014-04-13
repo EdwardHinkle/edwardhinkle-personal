@@ -51,3 +51,99 @@ nav.top-bar .dropdown li a {
 .upper {
     text-transform: uppercase;
 }
+
+
+
+/**
+ * GitHub page Styles
+ ************************/
+div.github {
+    padding-top: 20px;
+}
+
+.repo {
+	width: 300px;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+}
+.repo .repo-header .repo-title a {
+	text-decoration: none;
+  font-size: 0.5em;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.repo .repo-header .repo-title a:hover {
+	color: #636363;
+}
+.repo .repo-header .repo-title {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+  line-height: 25px;
+}
+.repo .repo-header .repo-language {
+	margin-top: 0px;
+	padding-top: 0px;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.repo h2 {
+	margin-left: 0px;
+}
+
+.repo{
+	height:auto;
+	min-height:10em;
+	padding:12px;
+	background-color:#efefef;
+	border:1px solid #dedede;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+  display: inline-block;
+}
+
+.repo p {
+	color: #898a8a;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.repo-header h2 a,
+.repo  {
+	color:#232323;
+}
+
+.repo p.stats{
+	color:#232323
+}
+
+.project-link {
+	display: block;
+	margin-left: 10px;
+	padding-bottom: 15px;
+}
+
+.repo-header{
+	margin:20px 0 12px 0;
+	border-left:2px solid #efefef;
+	padding-left:12px;
+	cursor:pointer;
+	border-color:#189dbf;
+}
+
+.repo-header.JavaScript {
+    border-color: #0c658c;
+}
+
+.repo-language.JavaScript {
+    color: #0c658c;
+}
+
+.stats i {
+    margin-left: 10px;
+    margin-right: 3px;
+}
