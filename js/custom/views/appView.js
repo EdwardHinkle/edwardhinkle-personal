@@ -2,6 +2,12 @@
     el: '#container',
     render: function(){
     
+      var page = new PageView({
+         parentEl: this.el
+      });
+      
+      $(document).foundation();
+      
       this.router = new Router();
       try {
          Backbone.history.start();
@@ -9,23 +15,6 @@
          console.debug("History Fail");
          console.error(e);
       }
-    
-      var header = new HeaderView({
-         parentEl: this.el
-      });
-      
-      // Add Content Here
-      var row = $('<div>').addClass('row');
-      var main = $('<div>').addClass("small-12 columns");
-      main.append($("<h1>").html("Currently under revision. Coming Soon."));
-      row.append(main);
-      this.$el.append(row);
-      
-      var footer = new FooterView({
-         parentEl: this.el
-      });
-      
-      $(document).foundation();
     
     },
     getTemplate:function (templateName) {
@@ -40,6 +29,17 @@
     updateNavigation: function(navigationId) {
       $("li.active").removeClass("active");
       $("li#nav-" + navigationId).addClass("active");
+    },
+    updatePage: function(navigationId, pageClass) {
+      this.updateNavigation(navigationId);
+      var lastPage = $("section.main-section div");
+      if (lastPage.length > 0) {
+         lastPage.remove();
+      }
+      
+      var page = new pageClass({
+         parentEl: $("section.main-section")
+      });
     }
 });
  

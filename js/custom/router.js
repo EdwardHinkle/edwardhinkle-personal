@@ -1,7 +1,7 @@
 var Router = Backbone.Router.extend({
     routes:{
         '': 'github',
-        //'resume': 'resume',
+        'resume': 'resume',
         //'work': 'work',
         //'about': 'aboutme',
         'github': 'github'
@@ -10,8 +10,7 @@ var Router = Backbone.Router.extend({
         console.debug("Front Page");
     },
     resume: function() {
-        appView.updateNavigation("resume");
-        console.debug("Resume Page");
+        appView.updatePage("resume", ResumeView);
     },
     work: function() {
         appView.updateNavigation("work");
@@ -22,8 +21,6 @@ var Router = Backbone.Router.extend({
         console.debug("Me!!!!");
     },
     github: function() {
-
-        
-        
+        appView.updatePage("github", GithubView);
     }
 });

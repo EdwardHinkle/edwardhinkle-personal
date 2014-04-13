@@ -1,6 +1,6 @@
- var GithubView = TemplateView.extend({
-    template: 'github',
-    className: "github",
+ var ResumeView = TemplateView.extend({
+    template: 'resume',
+    className: "resume",
     initialize: function(options){
       this.parentEl = options.parentEl || undefined;
       

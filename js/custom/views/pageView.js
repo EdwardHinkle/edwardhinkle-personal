@@ -1,6 +1,5 @@
- var HeaderView = TemplateView.extend({
-    template: 'header',
-    className: 'contain-to-grid fixed hide-for-small-only',
+ var PageView = TemplateView.extend({
+    template: 'page',
     initialize: function(options){
       this.parentEl = options.parentEl || undefined;
       
