@@ -165,7 +165,7 @@ h1.profile-title {
     font-size: 2rem;
 }
 
-div.about.row {
+div.about .hero {
     position: relative;
 }
 
