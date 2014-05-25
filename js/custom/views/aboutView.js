@@ -1,6 +1,6 @@
  var AboutView = TemplateView.extend({
     template: 'about',
-    className: "about row",
+    className: "about",
     initialize: function(options){
       this.parentEl = options.parentEl || undefined;
       

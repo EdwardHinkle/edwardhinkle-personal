@@ -14,15 +14,28 @@ nav.tab-bar h1.title {
     font-family: 'Lato', sans-serif;
 }
 
-nav.top-bar .title-area h1 {
-    font-size: 2rem;
-}
-nav.tab-bar h1.title {
-    font-size: 1.5rem;
+@media only screen {
+  nav.top-bar .title-area h1 {
+      font-size: 1.7rem;
+  }
 }
 
-nav.top-bar .title-area {
+@media only screen and (min-width: 40.063em) {
+  nav.top-bar .title-area h1 {
+    font-size: 2rem;
+  }
+  nav.top-bar .title-area {
     margin-right: 10px;
+  }
+  .repo {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+}
+
+nav.tab-bar h1.title {
+    font-size: 1.5rem;
 }
 
 nav.top-bar li a {
@@ -62,9 +75,6 @@ div.github {
 }
 
 .repo {
-	width: 300px;
-	margin-left: 20px;
-	margin-right: 0px;
 	margin-bottom: 25px;
 }
 .repo .repo-header .repo-title a {
@@ -155,21 +165,77 @@ div.github {
  * About Me
  ********************/
 h1.profile-title {
-    position: absolute;
-    top: 30%;
-    right: 15%;
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    border: solid medium #fff;
-    padding: 10px;
-    font-size: 2rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  border: solid medium #fff;
+  padding: 10px;
+  font-size: 2rem;
 }
 
 div.about .hero {
     position: relative;
+    background-image: url('../images/profile.jpg');
+    background-size: cover;
+}
+
+div.introduction .hero {
+    position: relative;
+    background-image: url('../images/profile.jpg');
+    background-size: cover;
+}
+
+@media only screen {
+  div .hero {
+      height: 165px;
+  }
+  h1.profile-title {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+ div .hero {
+      height: 350px;
+  }
+  h1.profile-title {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: auto;
+  } 
+}
+
+@media only screen and (min-width: 64.063em) {
+  div .hero {
+      height: 450px;
+  }
 }
 
 div.about {
     font-family: 'Lato', sans-serif;
     line-height: 1.4rem;
+}
+
+
+.work .pricing-table .title {
+  background-color: #03658c;
+}
+
+.work .pricing-table .title a {
+  color: #fff;
+}
+
+.work .pricing-table .title a:hover {
+  color: #189dbf;
+}
+
+.work .pricing-table .title a:active {
+  color: #043859;
+}
+
+.work .row img {
+  margin-bottom: 1.25rem;
 }

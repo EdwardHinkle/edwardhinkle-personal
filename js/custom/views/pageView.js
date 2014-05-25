@@ -14,10 +14,10 @@
               id: "work",
               url: "#work"
             },
-            { name: "Resume",
+            /*{ name: "Resume",
               id: "resume",
               url: "#resume"
-            },
+            },*/
             { name: "GitHub Repos",
               id: "github",
               url: "#github"

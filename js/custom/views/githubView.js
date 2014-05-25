@@ -11,7 +11,7 @@
          // Fetch all github repos
          $.getJSON("https://api.github.com/users/edwardhinkle/repos?sort=pushed", {}, $.proxy(function(data){
             
-            this.$el.append($("<div>").attr("id", "repo-container").addClass("small-12 columns"));
+            this.$el.append($("<div>").attr("id", "repo-container").addClass("small-12 medium-12 columns"));
             
             // Sort through all repos
             $.each(data, $.proxy(function(idx, repo){
@@ -22,7 +22,7 @@
                 // Repo isn't a fork, so we want to add it to the list
                 
                 // Create Box for Repo
-                var repoBox = $("<div>").attr("id", repo.name).addClass("repo").append(
+                var repoBox = $("<div>").attr("id", repo.name).addClass("repo medium-3 small-12").append(
                         $("<div>").addClass("repo-header " + repo.language).append(
                            $("<h2>").addClass("repo-title").append(
                               $("<a>").attr("href", repo.html_url).html(repo.name)

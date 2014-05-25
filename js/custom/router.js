@@ -4,7 +4,8 @@ var Router = Backbone.Router.extend({
         //'resume': 'resume',
         'work': 'work',
         'about': 'aboutme',
-        'github': 'github'
+        'github': 'github',
+        'nice-to-meet-you': 'niceToMeetYou'
     },
     front: function() {
         this.github();
@@ -20,5 +21,8 @@ var Router = Backbone.Router.extend({
     },
     github: function() {
         appView.updatePage("github", GithubView);
+    },
+    niceToMeetYou: function() {
+        appView.updatePage("nice-to-meet-you", IntroductionView);
     }
 });
